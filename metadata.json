@@ -1,0 +1,13 @@
+{
+  "name": "datapipe-hiera-redis",
+  "version": "1.0.3",
+  "author": "Peter Tierno <peter.a.tierno@gmail.com>",
+  "summary": "Hiera beckend to retrieve values from a Redis database",
+  "license": "GPL-3.0",
+  "source": "http://puppet-git.automate.datapipe.net/puppet/hiera-redis",
+  "project_page": "http://puppet-git.automate.datapipe.net/puppet/hiera-redis",
+  "issues_url": "http://unix-jira.datapipe.net",
+  "dependencies": [
+  ]
+}
+

@@ -2,7 +2,7 @@ class Hiera
   module Backend
     class Redis_backend
 
-      VERSION="1.0.2"
+      VERSION="1.0.3"
 
       attr_reader :redis, :options
 
@@ -32,7 +32,11 @@ class Hiera
 
       # when we try to deserialize a string
       rescue JSON::ParserError
-        args[:data]
+        if ["true","false"].include? args[:data]
+          args[:data] == "true"
+        else
+          args[:data]
+        end
       rescue => e
         Hiera.warn "Exception raised: %s: %s" % [e.class, e.message]
       end
